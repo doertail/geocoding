@@ -1,5 +1,5 @@
-# distancesFromSomeWhere
-특정 장소로부터 특정 장소까지와의 거리
+# distancesFromHere
+특정 장소로부터 특정 장소까지를 거리를 계산해줌
 ----
 
 # 프로젝트 소개
@@ -8,14 +8,10 @@
 ## 거리를 구한 방법
 
 1. [geopy](https://geopy.readthedocs.io/en/stable/) 라이브러리를 이용하여, 각 주소를 (위도, 경도)의 데이터로 변환한다.
-2. 마찬가지로 서울역의 (위도, 경도)도 구합니다.
-3. 두 지점 간의 직선거리를 구하기 위해, 하버사인 공식([Haversine Formula](https://en.wikipedia.org/wiki/Haversine_formula))를 이용해서 거리를 구함. 이 또한 파이썬에 가구현
+2. 마찬가지로 기준 위치의 (위도, 경도)도 구합니다.
+3. 두 지점 간의 직선거리를 구하기 위해, 하버사인 공식([Haversine Formula](https://en.wikipedia.org/wiki/Haversine_formula))를 이용해서 거리를 구함. 
 
 ---
-
-### Note
-
-각 주소가 종종 잘못 입력되어있거나, geopy라이브러리의 함수가 인식하지 못하여 위도와 경도를 구할 때 조금 시간이 걸렸다.
 
 ## why not use map api
 
